@@ -1,0 +1,11 @@
+{
+    "AppSyncApiName": "noteswithamplify",
+    "DynamoDBBillingMode": "PAY_PER_REQUEST",
+    "DynamoDBEnableServerSideEncryption": "false",
+    "AuthCognitoUserPoolId": {
+        "Fn::GetAtt": [
+            "authnoteswithamplifydf25e9e8",
+            "Outputs.UserPoolId"
+        ]
+    }
+}
